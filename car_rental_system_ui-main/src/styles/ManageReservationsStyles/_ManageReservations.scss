@@ -1,0 +1,26 @@
+@use "../global" as *;
+.manage-reservations {
+    padding: 20px;
+
+    table {
+        th {
+            background-color: #ff5722;
+            /* Orange */
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffe0b2;
+            /* Light Peach */
+        }
+
+        button {
+            background-color: #ff5722;
+            color: white;
+
+            &:hover {
+                background-color: #e64a19;
+            }
+        }
+    }
+}

@@ -1,0 +1,404 @@
+.admin-navbar {
+  background: linear-gradient(90deg, #bc4024, #1ca0e8);
+  box-shadow: 0px 4px 10px rgba(209, 209, 209, 0.5);
+  
+}
+
+.admin-navbar .nav-link {
+  color: #adb5bd;
+  transition: color 0.3s ease-in-out;
+  
+}
+
+.admin-navbar .nav-link:hover {
+  color: #f8f9fa;
+}
+
+.admin-navbar .nav-link.active {
+  color: #ffffff;
+  font-weight: bold;
+  border-bottom: 2px solid #ff4d4f;
+}
+
+.admin-navbar .btn-outline-danger {
+  color: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+.admin-navbar .btn-outline-danger:hover {
+  background-color: #ff4d4f;
+  color: #ffffff;
+}
+
+
+
+
+/* ManageCar css */
+.edit-car-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+}
+
+.edit-car-form h2 {
+  margin-bottom: 20px;
+}
+
+.table td,
+.table th {
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+
+
+/* Resvension css */
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.manage-reservations-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333333;
+}
+
+.error {
+  color: #ff4d4f;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table thead {
+  /* background-color: #333333; */
+  color: #000;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button styles */
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #ff4d4f;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #d9363e;
+}
+.dashboard-container {
+  
+ 
+    padding: 150px;
+  background-color: #f8f9fa; /* Light gray background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.dashboard-card {
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff4800, #00c6ff); /* Blue gradient */
+  color: white;
+}
+
+.dashboard-card .card-body {
+  padding: 20px;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.row.g-4 {
+  row-gap: 20px; 
+}
+
+.refund-btn {
+  padding: 10px 20px;
+  background-color: #2c56eb; 
+  color: rgb(246, 240, 240);  
+  border: none;
+  border-radius: 5px;
+  font-size: 10px;
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+
+.refund-btn:hover {
+  background-color: #c32f2f; 
+  transform: scale(1.1); 
+}
+
+
+.refund-btn:active {
+  background-color: #9c1f1f;  
+}
+
+/* payment-pagecss */
+.payment-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../images/Payment/paymentbg.jpg') no-repeat center center/cover;
+}
+
+.payment-container {
+  background-color: rgba(254, 156, 136, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.payment-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.payment-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.payment-button:hover {
+  background-color: #218838;
+}
+
+.success-message {
+  margin-top: 20px;
+  color: #28a745;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.checkmark {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.error-message {
+  margin-top: 20px;
+  color: #dc3545;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Background styling for the whole page */
+.reservation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensures the container takes the full height */
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fbc2eb); /* Colorful background */
+}
+
+/* Styling for the centered box */
+.reservation-box {
+  background-color: #fff; /* White box background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  width: 50%; /* Box width */
+  padding: 20px; /* Inner padding */
+  text-align: left; /* Align text to the left */
+}
+
+.reservation-box h3 {
+  color: #333; /* Darker heading color */
+  margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+.reservation-box p {
+  margin: 10px 0;
+  color: #555; /* Slightly muted color for text */
+  font-size: 16px;
+}
+
+/* paymenthistory */
+/* YourReservation.css reused */
+
+.reservation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400vh;
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4, #ed2207);
+  
+}
+
+.reservation-box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  padding: 20px;
+  text-align: left;
+}
+
+.reservation-box h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.reservation-box p {
+  margin: 10px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+/* Optional: Styling for list */
+.reservation-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.reservation-box li {
+  margin-bottom: 20px;
+}
+
+/* profile */
+/* Center the content */
+.profile-update-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+   background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fbc2eb);
+}
+
+/* Style the form box */
+.profile-update-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+/* Header style */
+.profile-update-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Form control styles */
+.profile-update-form .form-control {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Button style */
+.submit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+

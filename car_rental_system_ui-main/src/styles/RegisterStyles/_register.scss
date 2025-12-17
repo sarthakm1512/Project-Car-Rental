@@ -1,0 +1,88 @@
+@use "../global" as *;
+
+.form-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 0 auto;
+    padding: 10rem 2rem;
+    background-color: $bg-gray;
+    background-image: url("/src/images/banners/bg-form.png");
+    background-size: cover;
+    background-position: center;
+    color: $text-black;
+
+    @media (max-width: 950px) {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    &__text {
+        h2 {
+            font-size: $h2-size;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: $p-size;
+            color: $text-gray;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        background-color: white;
+        padding: 3rem;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+
+        label {
+            font-size: $p-size;
+            margin-bottom: 0.5rem;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid $border-gray;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 1rem;
+            background-color: $text-orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.6rem;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: darken($text-orange, 10%);
+            }
+        }
+
+        .success {
+            font-size: $p-size;
+            color: $success-green;
+        }
+    }
+        .form-div__form .error {
+            font-size: 1.2rem;
+            color: #fa4226;
+            /* Red for error */
+            margin-top: -1rem;
+            margin-bottom: 1rem;
+        }
+    
+        .form-div__form .success {
+            font-size: 1.4rem;
+            color: #2a9d8f;
+            /* Green for success */
+            margin-top: 1rem;
+        }
+}
